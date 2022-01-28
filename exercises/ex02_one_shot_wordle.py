@@ -6,7 +6,7 @@ secret: str = "python"
 
 guess: str = input("What is your 6-letter guess? ")
 while len(guess) != len(secret):
-    guess: str = input("That was not 6 letters! Try again: ")
+    guess = input("That was not 6 letters! Try again: ")
 
 word_index: int = 0
 emoji: str = ""
