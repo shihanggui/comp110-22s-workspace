@@ -4,6 +4,7 @@ __author__ = "730431294"
 
 
 def only_evens(original_list: list[int]) -> list[int]:
+    """The function that returns a list with all even numbers in the original list."""
     new_list: list[int] = []
     for i in original_list:
         if i % 2 == 0:
@@ -12,6 +13,7 @@ def only_evens(original_list: list[int]) -> list[int]:
 
 
 def sub(a_list: list[int], start: int, end: int) -> list[int]:
+    """The function returns a subset of the list."""
     new_list: list[int] = []
     if len(a_list) == 0 or start > len(a_list) or end <= 0:
         return new_list
@@ -28,6 +30,7 @@ def sub(a_list: list[int], start: int, end: int) -> list[int]:
 
 
 def concat(list_a: list[int], list_b: list[int]) -> list[int]:
+    """the function concatentates two lists together."""
     new_list: list[int] = []
     for i in list_a:
         new_list.append(i)
