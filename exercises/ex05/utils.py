@@ -30,7 +30,7 @@ def sub(a_list: list[int], start: int, end: int) -> list[int]:
 
 
 def concat(list_a: list[int], list_b: list[int]) -> list[int]:
-    """the function concatentates two lists together."""
+    """The function concatentates two lists together."""
     new_list: list[int] = []
     for i in list_a:
         new_list.append(i)
