@@ -2,6 +2,9 @@
 
 __author__ = "730431294"
 
+secret_word: str = "codes"
+input_length: int = len(secret_word)
+
 
 def contains_char(a: str, b: str) -> bool:
     """Find if a contains b."""
@@ -41,10 +44,6 @@ def input_guess(length: int) -> str:
     return word_input
 
 
-input_length: int = int(input())
-secret_word: str = input()
-
-
 def main() -> None:
     """The entrypoint of the program and main game loop."""
     turn: int = 1
@@ -54,7 +53,7 @@ def main() -> None:
         guess_word: str = input_guess(input_length)
         print(emojified(guess_word, secret_word))
         if guess_word == secret_word:
-            win: bool = True
+            win = True
             print(f"You won in {turn}/6 turns!")
         else:
             turn += 1
